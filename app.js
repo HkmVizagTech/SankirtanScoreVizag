@@ -30,7 +30,7 @@ function setLoading(isLoading) {
 }
 
 // 🔐 Airtable Config
-const API_KEY = "key";
+const API_KEY = "pat7JYQeNgNGcYcIb.4099069e22529c0f6953bc813565729e34b17966e17667de1c3b706b125029ce";
 const BASE_ID = "appwPeoeh8VkGgbST";
 const LLP_TABLE = "tblACfMsAiaAthCzI";
 const BM_TABLE = "tbluv0sbdAXERUVpP";
@@ -100,7 +100,7 @@ function renderTables(llpRecords, bmRecords) {
 
   // Render LLP Table
   html += `
-  <div class="badge">{llpDate ? ': ' + llpDate : ''}</div>
+  <div class="badge"> ${llpDate ? '' + llpDate : ''}</div>
     <h3 class="table-title">LLP Report</h3>
     <div class="results-card" style="margin-bottom: 40px;">
       <table class="results-table">

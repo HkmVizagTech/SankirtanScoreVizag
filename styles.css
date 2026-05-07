@@ -1,6 +1,7 @@
 .results-table tr.menu-separator td {
   border-top: 3px solid #0f766e !important;
 }
+
 body {
   font-family: "Fraunces", "Georgia", serif;
   background: radial-gradient(circle at 20% 10%, #f8f0dc, #f4f6fb 55%, #eef2f7);
@@ -34,7 +35,9 @@ body {
 }
 
 .badge {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 6px auto;
   padding: 6px 14px;
   border-radius: 999px;
   background: #111827;
@@ -43,7 +46,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  text-align: center;
 }
 
 .toolbar {
@@ -215,7 +218,8 @@ select:focus {
   padding: 11px 14px;
   text-align: center;
   font-family: "IBM Plex Sans", Arial, sans-serif;
-  font-size: 1.71rem; /* increased by 80% from 0.95rem */
+  font-size: 1.71rem;
+  /* increased by 80% from 0.95rem */
 }
 
 .results-table th {
