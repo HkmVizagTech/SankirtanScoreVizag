@@ -100,7 +100,8 @@ function renderTables(llpRecords, bmRecords) {
 
   // Render LLP Table
   html += `
-    <h3 class="table-title">LLP Report${llpDate ? ': ' + llpDate : ''}</h3>
+  <div class="badge">{llpDate ? ': ' + llpDate : ''}</div>
+    <h3 class="table-title">LLP Report</h3>
     <div class="results-card" style="margin-bottom: 40px;">
       <table class="results-table">
         <thead>
@@ -148,7 +149,7 @@ function renderTables(llpRecords, bmRecords) {
 
   // Render BM Table
   html += `
-    <h3 class="table-title">BM Report${bmDate ? ': ' + bmDate : ''}</h3>
+    <h3 class="table-title">BM Report</h3>
     <div class="results-card">
       <table class="results-table">
         <thead>

@@ -215,7 +215,7 @@ select:focus {
   padding: 11px 14px;
   text-align: center;
   font-family: "IBM Plex Sans", Arial, sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.71rem; /* increased by 80% from 0.95rem */
 }
 
 .results-table th {
@@ -296,6 +296,172 @@ select:focus {
   color: #7c2d12;
 }
 
+/* ── Tablet ─────────────────────────────────────── */
 @media (max-width: 900px) {
-  /* Unresponsive: do not adapt layout for mobile */
+  body {
+    padding: 20px 0 60px 0;
+  }
+
+  .page {
+    padding: 0 12px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .toolbar {
+    padding: 14px 12px;
+    gap: 10px;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .action-buttons {
+    gap: 8px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-refresh {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .results-card {
+    padding: 14px 10px 10px 10px;
+  }
+
+  .table-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 1.1rem;
+    padding: 9px 8px;
+  }
+}
+
+/* ── Mobile ─────────────────────────────────────── */
+@media (max-width: 480px) {
+  body {
+    padding: 12px 0 48px 0;
+  }
+
+  .page {
+    padding: 0 8px;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2px;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .toolbar {
+    padding: 12px 8px;
+    gap: 8px;
+    border-radius: 12px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-refresh {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .controls label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.92rem;
+  }
+
+  input[type="number"],
+  select {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .timestamp {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  .results-card {
+    padding: 10px 6px 8px 6px;
+    border-radius: 12px;
+  }
+
+  .table-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  /* Make table horizontally scrollable on tiny screens */
+  .results-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .results-table {
+    min-width: 340px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 0.98rem;
+    padding: 8px 6px;
+    white-space: nowrap;
+  }
+
+  .ingredient-cell {
+    white-space: normal;
+    word-break: break-word;
+    min-width: 120px;
+  }
+
+  .menu-cell {
+    font-size: 0.88rem;
+    letter-spacing: 0.4px;
+  }
+
+  .total-cost {
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 8px 10px;
+  }
 }
