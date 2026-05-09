@@ -362,6 +362,10 @@ select:focus {
     font-size: 1.1rem;
     padding: 9px 8px;
   }
+
+  .results-table.llp-table th {
+    font-size: 1.1rem;
+  }
 }
 
 /* ── Mobile ─────────────────────────────────────── */
@@ -462,6 +466,10 @@ select:focus {
     font-size: 0.98rem;
     padding: 8px 6px;
     white-space: nowrap;
+  }
+
+  .results-table.llp-table th {
+    font-size: 0.98rem;
   }
 
   .ingredient-cell {
