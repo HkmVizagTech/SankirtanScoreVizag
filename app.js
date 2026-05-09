@@ -106,7 +106,7 @@ function renderTables(llpRecords, bmRecords) {
   html += `
     <h3 class="table-title">LLP Report</h3>
     <div class="results-card" style="margin-bottom: 40px;">
-      <table class="results-table">
+      <table class="results-table llp-table">
         <thead>
           <tr>
             <th>Devotee</th>
