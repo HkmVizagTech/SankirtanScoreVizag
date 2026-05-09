@@ -98,9 +98,12 @@ function renderTables(llpRecords, bmRecords) {
   const llpDate = getTableDate(llpRecords);
   const bmDate = getTableDate(bmRecords);
 
+  // Populate the top date badge (above h1)
+  const dateBadgeEl = document.getElementById("dateBadge");
+  if (dateBadgeEl && llpDate) dateBadgeEl.textContent = llpDate;
+
   // Render LLP Table
   html += `
-  <div class="badge"> ${llpDate ? '' + llpDate : ''}</div>
     <h3 class="table-title">LLP Report</h3>
     <div class="results-card" style="margin-bottom: 40px;">
       <table class="results-table">
@@ -149,7 +152,7 @@ function renderTables(llpRecords, bmRecords) {
 
   // Render BM Table
   html += `
-    <h3 class="table-title">BM Report</h3>
+    <h3 class="table-title">Book Distribution Report</h3>
     <div class="results-card">
       <table class="results-table">
         <thead>
